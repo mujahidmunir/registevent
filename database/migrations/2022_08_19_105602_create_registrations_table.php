@@ -32,6 +32,7 @@ return new class extends Migration {
             $table->tinyInteger('digicash');
             $table->tinyInteger('validation')->default(0);
             $table->index(['phone', 'cif']);
+            $table->integer('quantity')->default(1);
             $table->timestamps();
         });
 
